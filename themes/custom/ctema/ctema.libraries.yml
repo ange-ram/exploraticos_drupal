@@ -1,0 +1,10 @@
+global-css:
+  version: 1.0
+  css: 
+    theme:
+      assets/css/main.css: {}
+
+global-js:
+  version: 1.0
+  js: 
+    assets/js/main.js: {}

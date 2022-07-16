@@ -1,0 +1,20 @@
+name: Ctema
+type: theme
+core_version_requirement: ^8 || ^9
+description: Tema personalizado para exploraticos
+package: Custom
+base theme: classy
+libraries:
+  - ctema/global-css
+  - ctema/global-js
+
+regions:
+  branding: branding
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  jumbotrom: Jumbotrom
+  breadcrumb: Breadcrumb 
+  content: Content 
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer: Footer

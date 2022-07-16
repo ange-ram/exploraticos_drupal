@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Theme navbar
+#}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {{ page.branding }}
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+        {% if (page.primary_menu)%}
+            {{ page.primary_menu}}
+        {% endif%}
+
+        {% if (page.secondary_menu)%}
+            {{ page.secondary_menu}}
+        {% endif%}
+
+    </div>
+
+</nav>
+
+
