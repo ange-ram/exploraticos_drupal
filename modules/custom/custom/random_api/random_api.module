@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Module help file for the Random Api module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function random_api_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.random_api':
+      return t('
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Random Api</h2>
+              <p>
+                This module provides a simple way to generate a random api.
+              </p>
+              <p>
+                <strong>Random Api</strong>
+              </p>
+          </div>
+        </div>
+      ');
+  }
+}

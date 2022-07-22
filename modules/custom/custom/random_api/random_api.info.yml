@@ -1,0 +1,5 @@
+name: Random Api
+type: module
+description: This module generates an api
+package: Random Api
+core_version_requirement: ^8 || ^9

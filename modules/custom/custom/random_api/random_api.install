@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Installation file for the Random Api module.
+ */
+
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function random_api_install()
+{
+  user_role_change_permissions(RoleInterface::ANONYMOUS_ID, array(
+    'api permiso' => TRUE,
+  ));
+}

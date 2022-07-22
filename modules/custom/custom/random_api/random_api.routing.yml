@@ -1,0 +1,15 @@
+random_api.content:
+  path: '/random-api'
+  defaults:
+    _controller: '\Drupal\random_api\Controller\RandomApiController::getRandomApi'
+    _title: 'Random Api'
+  requirements:
+    _permission: 'api permiso'
+
+random_api.get_api:
+  path: '/api/{api}'
+  defaults:
+    _controller: '\Drupal\random_api\Controller\RandomApiController::getApi'
+    _title: 'Api'
+  requirements:
+    _permission: 'api permiso' 
